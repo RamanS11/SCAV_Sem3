@@ -12,7 +12,7 @@ def reproduce():
         names.append(f_name)
         print(aux, f_name)
         aux = aux + 1
-
+    # Codigo de internet;
     os.system('ffmpeg -i ' + names[0] + ' -i ' + names[1] + ' -i ' + names[2] + ' -i ' + names[3] +
               ' -filter_complex "nullsrc=size=640x480 [base]; [0:v] setpts=PTS-STARTPTS,'
               ' scale=320x240 [upperleft]; [1:v] setpts=PTS-STARTPTS, scale=320x240 [upperright];'
