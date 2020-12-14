@@ -7,7 +7,7 @@ def convertor(in_name, codec, out_name):
 
 def app():
     names = ["1280x720_cut.mp4", "640x480_cut.mp4", "360x240_cut.mp4", "160x120_cut.mp4"]
-    new_codecs = ["vp8", "vp9", "libx265", "av1"]
+    new_codecs = ["libvpx", "libvpx-vp9", "libx265", "av1"]
     extensions = [".webm", ".webm", ".mp4", ".mkv"]
 
     for i in range(len(names)):
